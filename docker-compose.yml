@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ruby3:
+    container_name: ruby3
+    build:
+      context: .
+      dockerfile: ./docker_files/Ruby3
+    volumes:
+      - app_bundle:/usr/local/bundle
+      - .:/app_root
+
+volumes:
+  app_bundle:
+    external: false
