@@ -6,6 +6,7 @@ FactoryBot.define do
     trait :yamada do
       last_name { 'Yamada' }
     end
+  end
 
   # traitの記載位置
   #   factroyブロックの外に定義した場合、他のFactoryにて同じシンボルが定義されているとエラーとなる
