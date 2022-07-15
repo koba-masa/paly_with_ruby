@@ -1,6 +1,6 @@
-require './src/models/factory_bot_tester'
-require './spec/factories/factory_bot_tester'
-require './spec/factories/factory_bot_trait_tester'
+require './src/models/factory_bot/tester'
+require './spec/factories/factory_bot/tester'
+require './spec/factories/factory_bot/trait_tester'
 
 RSpec.describe FactoryBotTester, type: :model do
   let(:john_doe) { FactoryBot.build(:factory_bot_tester) }
