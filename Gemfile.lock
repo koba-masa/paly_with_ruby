@@ -6,6 +6,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    attr_extras (6.2.5)
     concurrent-ruby (1.1.10)
     diff-lcs (1.5.0)
     factory_bot (6.2.1)
@@ -13,6 +14,9 @@ GEM
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     minitest (5.16.2)
+    optimist (3.0.1)
+    patience_diff (1.2.0)
+      optimist (~> 3.0)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
       rspec-expectations (~> 3.11.0)
@@ -22,10 +26,16 @@ GEM
     rspec-expectations (3.11.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
+    rspec-fixture (0.0.2)
+      rspec (>= 1.0.0)
     rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
+    super_diff (0.9.0)
+      attr_extras (>= 6.2.4)
+      diff-lcs
+      patience_diff
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
 
@@ -35,6 +45,8 @@ PLATFORMS
 DEPENDENCIES
   factory_bot
   rspec
+  rspec-fixture (~> 0.0.2)
+  super_diff
 
 BUNDLED WITH
    2.3.14
