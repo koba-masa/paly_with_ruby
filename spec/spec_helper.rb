@@ -99,3 +99,13 @@ end
 
 require 'bundler/setup'
 Bundler.require(*[:default, :test])
+
+require "super_diff/rspec"
+require "super_diff/active_support"
+
+SuperDiff.configure do |config|
+  config.actual_color = :green
+  config.expected_color = :red
+  config.border_color = :yellow
+  config.header_color = :yellow
+end
